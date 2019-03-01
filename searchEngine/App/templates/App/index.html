@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>
+            Cosmonauts
+        </title>
+        <style>
+            
+            .a3{
+                font-size: 90px;
+                color: blue;
+            }
+            .a4{
+                font-size: 75px;
+                color: #53ff1a;
+            }
+            .a5{
+                font-size: 75px;
+                color:#ff4d88;
+            }
+            .a6{
+                font-size: 75px;
+                color: #ffff00;
+            }
+            .a7{
+                font-size: 75px;
+                color: #ff8000;
+            }
+            .a8{
+                font-size: 90px;
+                color: blue;
+            }
+            .a9{
+                font-size: 75px;
+                color: #53ff1a;
+            }
+            .a10{
+                font-size: 75px;
+                color: #ff4d88;
+            }
+            .a11{
+                font-size: 75px;
+                color: #ffff00;
+            }
+            .a12{
+                font-size: 75px;
+                color: #ff8000;
+            }
+            .a13{
+                font-size: 75px;
+                color: #9966ff;
+            }
+            .searchbox{
+                width:40%;
+                height: 6%;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <div class="1">
+                <span class="a3">M</span>
+                <span class="a4">o</span>
+                <span class="a5">v</span>
+                <span class="a6">i</span>
+                <span class="a7">e</span>
+                <span class="a8">S</span>
+                <span class="a9">e</span>
+                <span class="a10">a</span>
+                <span class="a11">r</span>
+                <span class="a12">c</span>
+                <span class="a13">h</span>
+            </div>
+            <div>
+                <input type='text' class='searchbox'/>
+            </div>
+            <div>
+                {% if list %}
+                {% for i in list %}
+                    <p>
+                        {{ i }}
+                    </p>
+                {% endfor %}
+                {% endif %}
+            </div>
+        </center>
+    </body>
+</html>
